@@ -61,7 +61,9 @@ const { } = new class {
     this.ctx.arc(innerWidth / 2, innerHeight / 2, radius, 0, 2 * Math.PI);
     this.ctx.strokeStyle = strokeStyle;
     this.ctx.stroke();
-
+  
+    console.log(this.dataArray)
+    
     for (let i = 0; i < bars; i++) {
       const radians = (Math.PI * 2) / bars;
       const barHeight = this.dataArray[i] * .5;
